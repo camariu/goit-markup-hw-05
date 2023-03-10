@@ -12,12 +12,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
+    <!--Modal-->
+    <div class="modal is-hidden" data-modal>
+      <div class="inner-div">
+        <button class="button-data-modal-close" data-modal-close >
+            <div class="modal-close">
+              <svg width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </div>
+          </button>
+      
+      </div>
+    </div>
     <!--HEADER-->
     <header class="page-header unstyled-list container">
       <nav class="page-heder-nav">
         <a class="navigation-logo-1" href="#">Studio</a>
         <ul class="navigation-list unstyled-list">
-          <li><a class="navigation-list" href="index.html">Studio</a></li>
+          <li ><a class="navigation-list " href="index.html">Studio</a></li>
           <li>
             <a class="navigation-list" href="portfolio.html">Portfolio</a>
           </li>
@@ -44,13 +57,14 @@
       </div>
     </header>
     <main>
-      <!--HIRO-->
+     
+      <!--HERO-->
       <section class="section-one">
         <div class="container-section-one">
           <h1 class="main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
           <ul class="button-main-title unstyled-list">
             <li>
-              <button class="button-from-main-title" type="button">
+              <button data-modal-open class="button-from-main-title" type="button">
                 Request our service
               </button>
             </li>
@@ -477,5 +491,6 @@
         </section>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
