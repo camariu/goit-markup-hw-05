@@ -164,9 +164,11 @@ html {
   width: 113px;
   border-radius: nullpx;
   margin-left: 10px;
+  position: relative;
+  top: -4px;
 }
 
-.navigation-list li::after {
+.navigation-list .link-nav::after {
   content: "";
   width: 0%;
   display: block;
@@ -176,11 +178,13 @@ html {
   position: relative;
   border-radius: 2px;
   top: 29px;
+  visibility: hidden;
+   
 }
-.navigation-list li:hover::after {
+
+.navigation-list .link-nav::after{
   width: 100%;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  visibility: visible;
 }
 
 /*HERO*/
@@ -674,6 +678,9 @@ html {
   letter-spacing: 0.03em;
   color: #212121;
   padding: 6px 22px;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
 }
 
 .buttons:hover {
